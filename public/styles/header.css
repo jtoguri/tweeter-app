@@ -1,6 +1,7 @@
+/* CSS styling for the header */
 nav + header {
   height: 400px;
-  margin-top: 120px;
+  margin: 120px 0 2em;
   width: 100%;
   background-color: #CF9B41;
   display: flex;
@@ -10,6 +11,7 @@ nav + header {
   background-image: url("../images/asfalt-light.png");
 }
 
+/* Header styling for screen sizes larger than 1024px */
 @media screen and (min-width: 1024px) {
   nav + header {
     margin: 8em 3em 0 3em;

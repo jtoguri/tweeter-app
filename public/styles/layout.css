@@ -51,7 +51,7 @@ main > * {
 
 article.tweet {
   border: 4px solid black;
-  margin: 2em 0;
+  margin-bottom: 2em;
   padding: 1em 0.5em;
 }
 
@@ -111,10 +111,10 @@ article.tweet footer ul *:hover {
 #error-message {
   border: 3px solid red;
   color: red;
-  margin-top: 1em;
   padding: 0.5em 1em;
+  margin-bottom: 1em;
 }
 
-#error-message {
+.hidden {
   display: none;
 }

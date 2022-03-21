@@ -66,6 +66,18 @@ $( document ).ready(function() {
     }
   }
 
+  // Control visibility of the textarea for submitting a new tweet from the button in the nav
+  $( "#to-form" ).click(function () {
+    // If the form is already visible then it slides up and is hidden, if it is not visible then it slidesdown and is focused on so the user may enter text
+    if ($( "form" ).is(':visible')) {
+      $("#error-message").hide();
+      $( "form" ).slideUp()
+    } else {
+      $( "form" ).slideDown();
+      $( "#tweet-text" ).focus();
+    }
+  });
+
   // Event listener for form submission, currently the only form on the page is for submitting a new tweet
   $( "form" ).submit(function( e ) {
     

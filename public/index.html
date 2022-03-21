@@ -33,8 +33,10 @@
     <nav>
       <span>tweeter</span>
       <div class="container">
-        <span><span class="bold-me">Write</span> a new tweet</span>
-        <i class="fa-solid fa-angles-down"></i>
+        <button type="button" id="to-form">
+          <span><span class="bold-me">Write</span> a new tweet</span>
+          <i class="fa-solid fa-angles-down"></i>
+        </button>
       </div>
     </nav>
 
@@ -61,10 +63,10 @@
           <i class="fa-solid fa-triangle-exclamation"></i>
         </div>
         
-        <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
+        <!-- Form to submit a new tweet -->
+        <form method="POST" action="/tweets" class="hidden">
           <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
+          <textarea name="text" id="tweet-text"></textarea>
           <div class="form-helper">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
