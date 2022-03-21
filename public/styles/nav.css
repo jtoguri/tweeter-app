@@ -33,7 +33,15 @@ nav div.container button:hover {
 }
 
 nav div.container button:hover i {
-  padding-top: 10px;
+  animation-name: upDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes upDown {
+  to {
+    padding-top: 10px;
+  }
 }
 
 .bold-me {
