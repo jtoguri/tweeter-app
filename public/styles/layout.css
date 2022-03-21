@@ -35,6 +35,18 @@ main > * {
   flex: 1 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  main {
+    width: 60%;
+    margin: 8em 2em 0em 2em;
+    padding: 0;
+  }
+}
+
 /* Styling each tweet */
 
 article.tweet {
@@ -49,7 +61,6 @@ article.tweet header {
   justify-content: flex-start;
   align-items: center;
   column-gap: 1em;
-  padding: 0 1em;
 }
 
 article.tweet header span + span {
