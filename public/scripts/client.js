@@ -61,14 +61,15 @@ $( document ).ready(function() {
       const $tweet = createTweetElement(tweet);
        
       // Prepends each tweet element to the tweet container so the tweets are rendered in reverse chronological order
-      // This assumes the tweets are stored in a sorted chronological order, if they were sorted in reverse chronological order, prepend would be replaced with append
       $('#tweets-container').prepend($tweet);
     }
   }
 
   // Control visibility of the textarea for submitting a new tweet from the button in the nav
   $( "#to-form" ).click(function () {
-    // If the form is already visible then it slides up and is hidden, if it is not visible then it slidesdown and is focused on so the user may enter text
+
+    // If the form is already visible then it slides up and is hidden.
+    // If it is not visible then it slidesdown and is focused on so the user may enter text
     if ($( "form" ).is(':visible')) {
       $("#error-message").hide();
       $( "form" ).slideUp()
@@ -108,13 +109,13 @@ $( document ).ready(function() {
     // Turn the tweet form data into a query string (format the server is set up to receive)
     const newTweet = $( this ).serialize();
 
-    // Post the new tweet
+    // Post the new tweet, and handle the tweet data response
     $.post("/tweets", newTweet, ( tweetData ) => {
       
-      // Clear the text from the new tweet form and resest the counter
+      // On success, clear the text from the new tweet form and resest the counter
       $("#tweet-text").val("").trigger("input");
 
-      // Create a new html tweet element from the most recently added tweet and render it at the top of the tweet container
+      // Create a new html tweet element from the response tweet data and render it at the top of the tweet container
       const $tweet = createTweetElement(tweetData);
       $( '#tweets-container' ).prepend($tweet);
     });

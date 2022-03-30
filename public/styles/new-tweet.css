@@ -52,3 +52,8 @@ label[for="tweet-text"] {
 .form-helper > button:hover {
   cursor: pointer;
 }
+
+/* Class used to style the counter red, logic handled in jQuery */
+.red {
+  color: red;
+}

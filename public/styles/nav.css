@@ -1,3 +1,4 @@
+/* Nav bar styling */
 nav {
   display: flex;
   position: fixed;
@@ -38,6 +39,7 @@ nav div.container button:hover i {
   animation-iteration-count: infinite;
 }
 
+/* Animating the nave bar icon */
 @keyframes upDown {
   to {
     padding-top: 10px;
