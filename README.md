@@ -13,6 +13,8 @@ Tweeter is a single-page, AJAX-based Twitter clone. It usese jQuery, HTML5, and 
 
 ![gif of example ui flow](https://github.com/jtoguri/tweeter-app/blob/master/docs/ezgif.com-gif-maker.gif)
 
+![ui on small screens](https://github.com/jtoguri/tweeter-app/blob/master/docs/tweeter-responsive.png)
+
 ## Dependencies
 
 - Express
