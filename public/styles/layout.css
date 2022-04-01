@@ -75,6 +75,7 @@ article.tweet p {
   border-bottom: 3px solid black;
   margin: 0;
   font-weight: bold;
+  word-break: break-word;
 }
 
 article.tweet:hover {
